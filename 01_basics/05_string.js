@@ -52,3 +52,7 @@ console.log(url.includes('my')); //false
 const new_url = url.split('/');
 // [ 'https:', '', 'radhika.com', 'radhika%20saxena' ]
 console.log(new_url);
+
+
+const name_1 = "madhu";
+console.log(`My name is ${name_1}`);
