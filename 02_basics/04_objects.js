@@ -39,7 +39,7 @@ const obj4 = {5: "a" , 6 : "b"}
 const newobj = {...obj1, ...obj2, ...obj4}
 // console.log(newobj)
 
-
+// a single users array contains multiple objects
 const users = [
     {
         id: 1,
@@ -51,15 +51,61 @@ const users = [
     }
 ]
 
-console.log(users[1].email)
-console.log(tinderUser)
+// console.log(users[1].email)
+// console.log(tinderUser)
 
 // to get the keys of a particular object
 // combined all keys into array
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 // combined all values into array
-console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser)); //less used
 
 // to check is the object has a particular property or not
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    coursename: "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// console.log(course.courseInstructor)
+// destructure an object
+// optimized syntax-
+const {courseInstructor : Instructor} = course
+// we can now access courseInstructor as Instructor
+console.log(Instructor)
+
+// object destructuring
+// {}-> concept means destructuring
+// used in react.js
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "hitesh")
+  
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++
+
+// object - JSON
+// not a object properly becoz it is not holded in a variable name
+// {
+//     "name" : "radhika",
+//     "coursename": "js in hindi",
+//     "price" : "free"
+// }
+// learn how to use api in js to fectch data and in response we get the url response
+
+// API can be recieved in objects format, array format
+// random user me - website for api
+// json formatter tool
+[
+    {},
+    {},
+    {}
+]
+
+// json - javascript object notation
