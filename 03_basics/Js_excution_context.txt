@@ -1,0 +1,14 @@
+In Javascript Execution Context(EC), 
+we have 2 phases
+
+JS is single threaded
+
+JS CODE -> global EC(this (window object)) 
+
+a. Global Execution Context
+b. Function Execution Context
+c. eval Execution Context
+
+js code --> memory creation phase 
+        ---> Execution phase
+        
