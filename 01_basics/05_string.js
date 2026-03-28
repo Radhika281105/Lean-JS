@@ -6,6 +6,7 @@ const repoCount = 50
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 // new is used to assign an object to a variable
+// here string treater as an object
 const getName = new String("radhika-ct")
 console.log(getName[0]);
 
@@ -15,7 +16,7 @@ console.log(getName.__proto__); //{}
 // access the length
 console.log(getName.length);
 
-// didn't change original technique
+// didn't change original string
 console.log(getName.toUpperCase());
 
 // to find the character present at each index
@@ -29,7 +30,7 @@ const newString = getName.substring(0,4);
 console.log(newString)
 
 // can give negative index
-// her also lower bound index value neglecgted i.e. -2 index
+// here also lower bound index value neglecgted i.e. -2 index
 const anotherString = getName.slice(-4,-2);
 console.log(anotherString);
 

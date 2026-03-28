@@ -4,13 +4,13 @@
 
 
 // immediately invoke a function
-// normal function inside iife
+// normal/regular function inside iife
 (function chai(name){
     //named IIFE
     console.log(`DB CONNECTED ${name}`)
 })("radhika");
-// end the line using ; to end the function by using semicolon
-// put the function in (parantesis) and then call it using ()
+// end the line using ; to end the function by using semicolon to separate 2 different function
+// put the function in (paranthesis) and then call it using ()
 
 // arrow function inside IIFE
 ( (name) => {

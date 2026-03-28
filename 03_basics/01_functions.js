@@ -11,14 +11,14 @@
 // myName() //used for actual exceution of function
 // myName //used for just reference
 
-// function addTwoNumbers(number1, number2){ //parameters
-//     return number1 + number2
-// }
+function addTwoNumbers(number1, number2){ //parameters
+    return number1 + number2
+}
 
 //arguments
 // console.log(addTwoNumbers(1,2)); 
-// console.log(addTwoNumbers(1,"2")); //-> number to string conversion
-// console.log(addTwoNumbers(1,null));
+// console.log(addTwoNumbers(3,"2")); //-> number to string conversion
+// console.log(addTwoNumbers(3,null));
 
 // storing the function result in a variable
 // const result = console.log(addTwoNumbers(1,2));
@@ -50,20 +50,20 @@
 
 // if we are having multiple values and we don't have
 // ... -> spread or rest operator
-function calculateCartPrice(val1, val2, ...num1){
-    return num1
-}
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
 // console.log(calculateCartPrice(200,400,500,600))
 
-const user = {
-    username : "hitesh",
-    price : 199
-}
+// const user = {
+//     username : "hitesh",
+//     price : 199
+// }
 
 // in javascript it is necessary to have type checking
-function handleObject(anyObject){
-    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
-}
+// function handleObject(anyObject){
+//     console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+// }
 
 // handleObject(user);
 // handleObject({
@@ -71,14 +71,14 @@ function handleObject(anyObject){
 //     price: 99
 // })
 
-const myNewArray = [200,300,400,100]
-function returnSecondValue(getArray){
-    return getArray[2]
-}
+// const myNewArray = [200,300,400,100]
+// function returnSecondValue(getArray){
+//     return getArray[2]
+// }
 
 // passing a array reference
-console.log(returnSecondValue(myNewArray))
+// console.log(returnSecondValue(myNewArray))
 
 // directly creating an array and passing it
-console.log(returnSecondValue([300,400]))
-console.log(returnSecondValue([300,400,600]))
+// console.log(returnSecondValue([300,400]))
+// console.log(returnSecondValue([300,400,600]))

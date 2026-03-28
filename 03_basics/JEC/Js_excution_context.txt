@@ -1,0 +1,85 @@
+                JavaScript Execution Context & Call Stack
+
+-> JS is single threaded becoz
+a. single call stack
+b. can only do one thing at a time
+
+What is Execution Context?
+When JavaScript runs any file, it creates an Execution Context — the environment in which your code is executed. It runs everything in two phases.
+
+                        Types of Execution Context:-
+
+1. Global Execution Context (GEC)
+a. Created first, always, no matter what
+b. Stored in the this variable
+c. In browser → this = window object
+d. In Node.js → this is different
+e. Only one GEC exists per program
+
+2. Function Execution Context (FEC)
+a. Created every time a function is called
+b. Each call gets its own brand new sandbox (new variable environment + new execution thread)
+c. Deleted after the function finishes executing
+
+3. Eval Execution Context
+a. Rare, not important for interviews
+b. Just know it exists
+
+
+                        Two Phases of Execution
+
+Phase 1 — Memory Creation Phase (Creation Phase)
+a. JS scans all variables and functions
+b. Variables are stored with value → undefined
+c. Functions are stored with their full definition (not undefined)
+d. No actual math or logic runs here
+
+Phase 2 — Execution Phase
+a. Code runs line by line
+b. Variables get their actual values
+c. Math/logic is calculated
+d. Functions are called and executed
+
+//++++++++++++++++++++++Code++++++++++++++++++++++++
+var val1 = 10;
+var val2 = 5;
+
+function addNum(n1, n2) {
+  var total = n1 + n2;
+  return total;
+}
+
+var result1 = addNum(val1, val2);
+var result2 = addNum(3, 8);
+
+step 1- GEC is Created
+
+step 2 - Memory Phase
+variable    value stored
+val1        undefined
+val2        undefined
+addNum      full function definition
+result1     undefined
+result 2    undefined
+
+
+Step 3 — Execution Phase
+val1 → 10
+val2 → 5
+addNum → skipped (nothing to execute, definition already stored)
+result1 → addNum is called → new FEC created
+Memory phase inside FEC: n1=undefined, n2=undefined, total=undefined
+Execution phase: n1=10, n2=5, total=15
+return total → 15 returned to GEC → FEC is deleted
+result1 → 15
+result2 → same process repeats → returns 11 → FEC deleted again
+
+                            Call Stack
+a. A stack that tracks which execution context is currently running
+b. Works on LIFO — Last In, First Out
+
+How it works:
+a. GEC is pushed first (always at the bottom, never leaves until program ends)
+b. When a function is called → its FEC is pushed on top
+c. When function finishes → FEC is popped off
+d. If a function calls another function inside it → that gets pushed on top too

@@ -4,7 +4,7 @@
 // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100
-// No special category given to float..It is given under Number
+// No special category given to float..It is placed under Number
 const scoreValue = 100.3
 
 const isLoggedIn = false;
@@ -14,9 +14,10 @@ let userEmail; //undefined
 const id = Symbol('123');
 const anotherId = Symbol('123')
 // given same value but still they are not same due to symbol data type
-// console.log(id == anotherId)
+// console.log(id == anotherId) //O/P - false
 
 // to convert large number into bigInt
+// put 'n' at the end
 const bigNumber = 37774986864234n
 // console.log(typeof bigNumber)
 
@@ -27,6 +28,7 @@ const bigNumber = 37774986864234n
 // Array, Objects, Functions
 
 // arrays
+//  in squuare brackets
 const heros = ["shaktiman", "naagraj", "doga"]
 
 // objects in curly braces
@@ -62,5 +64,5 @@ let userOne = {
 let userTwo = userOne
 
 userTwo.email = "hitesh@google.com"
-console.log(userOne.email);
-console.log(userTwo.email)
+// console.log(userOne.email);
+// console.log(userTwo.email)

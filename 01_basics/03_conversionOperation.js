@@ -6,8 +6,8 @@ let score = "33abc"
 // console.log(typeof (score));
 
 let valueInNumber = Number(score)
-// console.log(valueInNumber)
-// console.log(typeof valueInNumber)
+// console.log(valueInNumber) //OP - NaN
+// console.log(typeof valueInNumber) //number
 
 
 // "33" => 33
@@ -55,9 +55,9 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2) //122
 // console.log(1 + 2 + "2") //32
 
-// console.log(+true)
+// console.log(+true) //O/P- 1
 // console.log(true+) //error
-// console.log(+"")
+// console.log(+"") //O/P-0
 
 let num1, num2, num3
 num1 = num2 = num3 = 2+2

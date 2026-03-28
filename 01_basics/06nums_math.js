@@ -6,6 +6,7 @@ const Num = 40
 // console.log(Num)
 
 // here we have casted the Number data type
+// here also Number is treated as an object
 const balance = new Number(100)
 // console.log(balance)
 
@@ -30,7 +31,7 @@ const hundreds = 1000000
 // console.log(Math.round(4.7)) //5
 // console.log(Math.ceil(4.2)); //5
 // console.log(Math.floor(4.9)); // 4
-// console.log(Math.min(4,7,8,1));
+// console.log(Math.min(4,7,8,1));  //1
 
 
 // random() - value range between 0 and 1
