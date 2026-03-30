@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    div.textContent = "Hello World";
+    console.log(div);
+
+    // we can also add class to the element
+    div.classList.add('my-div');
+    console.log(div);
+
+    // we can also add id to the element
+    div.id = 'my-id';
+    console.log(div);
+
+    // we can also add styles to the element
+    div.style.color = 'red';
+    div.style.fontSize = '20px';
+    console.log(div);
+    const addText = document.createTextNode('This is a text node');
+    div.appendChild(addText);
+    console.log(div);
+</script>
+</html>
