@@ -75,7 +75,7 @@ const course = {
 // optimized syntax-
 const {courseInstructor : Instructor} = course
 // we can now access courseInstructor as Instructor
-console.log(Instructor)
+console.log(Instructor);
 
 // object destructuring
 // {}-> concept means destructuring

@@ -12,5 +12,5 @@
 // let myCreateDate = new Date(2023,0,23);
 
 let myCreateDate1 = new Date("2023-01-23");
-console.log(myCreateDate.toDateString())
+console.log(myCreateDate1.toDateString())
 console.log(myCreateDate1.toDateString())
